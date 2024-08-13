@@ -1,10 +1,10 @@
 package bruce.dev.flight_tracker_api.Models;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
+
+import java.util.Date;
 
 @Data
 @Entity
@@ -21,5 +21,10 @@ public class Forum {
     // define fields for comments and likes. These should hold arrays
 //    private List<CommentModel> comments;
 //    private List<LikeModel> likes;
-
+    // CreatedAt field
+    private Date createdAt;
+    @PrePersist
+    protected void onCreate() {
+        createdAt = new Date();
+    }
 }
