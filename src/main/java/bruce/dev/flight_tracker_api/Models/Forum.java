@@ -8,7 +8,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "Forum")
+@Table(name = "Forums")
 
 public class Forum {
     // define a field for the forum id
