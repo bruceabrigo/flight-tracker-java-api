@@ -17,7 +17,7 @@ public class Forum {
     // define a field for the forum content
     private String content;
     // owner field to be implemented later with authentication
-//    private User owner;
+    // private User owner;
     // define fields for comments and likes. These should hold arrays
 //    private List<CommentModel> comments;
 //    private List<LikeModel> likes;
